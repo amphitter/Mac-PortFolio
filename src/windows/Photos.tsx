@@ -101,8 +101,12 @@ const Photos = (): ReactElement => {
 											openWindow('imgfile', item);
 										}}
 									>
-										<img src={item.imageUrl} alt={item.name} />
-									</button>
+<img
+  src={item.imageUrl.replace('/upload/', '/upload/w_400/q_auto/f_auto/')}
+  alt={item.name}
+  loading="lazy"
+  className="w-full h-[200px] object-cover rounded-lg"
+/>									</button>
 									<p className="gallery-item-title">{item.name}</p>
 									<p className="gallery-item-issuer">
 										<a
