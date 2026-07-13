@@ -1,10 +1,3 @@
-<div align="center">
-  <br />
-    <a href="" target="_blank">
-      <img src="public/readme/readme-hero.webp" alt="Project Banner">
-    </a>
-  <br />
-
   <div>
 <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
 <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
