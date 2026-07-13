@@ -5,6 +5,8 @@ import { dirname, resolve } from 'path';
 import { fileURLToPath } from 'url';
 import { defineConfig } from 'vite';
 
+import { cloudflare } from "@cloudflare/vite-plugin";
+
 const rootDir = dirname(fileURLToPath(import.meta.url));
 const aliases: Alias[] = [
 	{
@@ -49,7 +51,7 @@ const aliases: Alias[] = [
 
 // https://vite.dev/config/
 export default defineConfig({
-	plugins: [react(), tailwindcss()],
+	plugins: [react(), tailwindcss(), cloudflare()],
 	resolve: {
 		alias: aliases,
 	},
